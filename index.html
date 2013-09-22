@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <p>Hello!</p>
+    <svg width="50" height="50">
+		<circle cx="25" cy="25" r="25" fill="cyan" />
+	</svg>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    	d3.select("body").append("svg")
+    		.attr("width", 300)
+    		.attr("height", 500)
+    	.append("circle")
+    		.attr("cx", 50)
+    		.attr("cy", 25)
+    		.attr("r", 50)
+    		.style("fill", "purple");
+
+    </script>
+  </body>
+</html>
